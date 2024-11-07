@@ -108,7 +108,6 @@ btnPut.addEventListener('click', async () => {
   }
 
   try {
-    // Fetch user by ID
     const response = await fetch(`https://672c9fcd1600dda5a9f9320c.mockapi.io/users/${id}`);
 if (!response.ok) {
   alert('No se encontró el usuario con ese ID.');
@@ -116,11 +115,9 @@ if (!response.ok) {
 }
     const user = await response.json();
 
-    // Update user data (assuming input fields for modification)
     user.name = document.getElementById('inputPutNombre').value.trim();
     user.lastname = document.getElementById('inputPutApellido').value.trim();
 
-    // Update user on server (PUT request)
     const updateResponse = await fetch(`${apiUrl}/${id}`, {
       method: 'PUT',
       headers: {
