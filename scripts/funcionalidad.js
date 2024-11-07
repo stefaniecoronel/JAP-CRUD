@@ -1,4 +1,4 @@
-//Integrantes del grupo: Camila Farro, Camila Nogueira, Camila Rocca, Fernanda Rigali, Stefanie Corone
+//Integrantes del grupo: Camila Farro, Camila Nogueira, Camila Rocca, Fernanda Rigali, Stefanie Coronel
 
 document.addEventListener('DOMContentLoaded', function() {
 
